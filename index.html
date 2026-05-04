@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interactive DSA visualizer for stack, linked lists, queue, and searching algorithms."
+    />
+    <title>DSA Visualizer Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["'Trebuchet MS'", "ui-sans-serif", "system-ui"],
+              body: ["'Segoe UI'", "ui-sans-serif", "system-ui"],
+            },
+            boxShadow: {
+              glow: "0 0 0 1px rgba(255,255,255,0.08), 0 18px 80px rgba(15,23,42,0.45)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <div class="page-backdrop"></div>
+    <div id="app"></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
