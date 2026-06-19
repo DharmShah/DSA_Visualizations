@@ -47,53 +47,5 @@ Open `index.html` and start a static server from VS Code.
 ## Notes
 
 The current version is intentionally static and dependency-free. If you want, I can extend it with drag-and-drop node reordering, step-by-step queues, or more algorithms next.
-
-## Stack Reference Code
-
-### JavaScript
-
-```javascript
-class Stack {
-	constructor() {
-		this.items = [];
-	}
-
-	push(value) {
-		this.items.push(value);
-	}
-
-	pop() {
-		return this.items.pop();
-	}
-
-	peek() {
-		return this.items[this.items.length - 1] ?? null;
-	}
-
-	isEmpty() {
-		return this.items.length === 0;
-	}
-}
-```
-
-### Python
-
-```python
-class Stack:
-		def __init__(self):
-				self.items = []
-
-		def push(self, value):
-				self.items.append(value)
-
-		def pop(self):
-				if self.items:
-						return self.items.pop()
-				return None
-
-		def peek(self):
-				return self.items[-1] if self.items else None
-
-		def is_empty(self):
-				return len(self.items) == 0
+ len(self.items) == 0
 ```
